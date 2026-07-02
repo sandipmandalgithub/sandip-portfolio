@@ -30,7 +30,7 @@
 <style>
 
 /*======================================
-//--//-->   ABOUT
+              ABOUT
 ======================================*/
 
 .about-mf .box-shadow-full {
@@ -42,11 +42,24 @@
   margin-bottom: 2rem;
 }
 
-.about-mf .about-img img {
+/* .about-mf .about-img img {
    margin-left: 10px; 
    
+} */
 
+.about-mf .about-img img,
+.about-img img {
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: 10px;
 }
+
+
+
+
+
 /*Home Profile Image Fix*/
 .hero .img{ background-size: 75% !important;
 	 background-repeat: no-repeat !important; 
@@ -122,6 +135,85 @@
   transform: scale(1.1);
 }
 
+/* ================= Responsive Design (Phone) ================= */
+
+@media (max-width: 768px) {
+
+  /* Hero Section */
+  .hero .img {
+    background-size: contain !important;
+    background-position: center bottom !important;
+    background-repeat: no-repeat !important;
+    min-height: 350px;
+    margin-top: 20px;
+  }
+
+  /* Hero Heading */
+  .home-slider h1 {
+    font-size: 34px !important;
+    line-height: 1.3;
+  }
+
+  /* Hero Text */
+.home-slider .text {
+  text-align: center;
+}
+
+  /* Typing Animation */
+  #typing-animation {
+    font-size: 22px !important;
+    white-space: normal;
+  }
+
+  /* Buttons */
+  .btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .home-slider .btn {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+  /* Cards */
+  .resume-wrap {
+    margin-bottom: 20px;
+  }
+
+  /* Images */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+    /* About Profile Image */
+  .about-img {
+    text-align: center;
+  }
+
+  .about-img img {
+    width: 140px;
+    height: 140px;
+    margin: auto;
+  }
+
+/* About Information */
+.about-info {
+  font-size: 15px;
+}
+
+/* Resume Heading */
+.heading-section h2 {
+  font-size: 32px;
+}
+
+.big {
+  display: none;
+}
+
+}
+
+
 
 </style>
 
@@ -145,9 +237,9 @@
 	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
 	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
 	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
-			  <li class="nav-item"><a href="#resources-section" class="nav-link"><span>Resources</span></a></li>
-			  <li class="nav-item"><a href="#certification-section" class="nav-link"><span>Certifications</span></a></li>
-			  <li class="nav-item"><a href="#coding-section" class="nav-link"><span>Coding</span></a></li>
+			      <li class="nav-item"><a href="#resources-section" class="nav-link"><span>Resources</span></a></li>
+			      <li class="nav-item"><a href="#certification-section" class="nav-link"><span>Certifications</span></a></li>
+			      <li class="nav-item"><a href="#coding-section" class="nav-link"><span>Coding</span></a></li>
 	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
 	        </ul>
 	      </div>
@@ -317,7 +409,7 @@
 									<li class="d-flex"><span>Language:</span> <span>Bengali, English, Hindi</span></li>
 									<li class="d-flex"><span>Tech Stack:</span> <span>Java, Spring Boot, JavaScript, React.js, Node.js, Flutter</span></li>
 									<li class="d-flex"><span>Databases & Tools:</span> <span>MySQL, Oracle, MongoDB, REST APIs, Git, Postman, Docker</span></li>
-                                    <li class="d-flex"><span>Cloud & Platforms:</span> <span>AWS (EC2, S3), GitHub, Linux</span></li><li class="d-flex"><span>Interest:</span> <span>Coding, Problem Solving, System Design, Building Scalable Applications</span></li>
+                  <li class="d-flex"><span>Cloud & Platforms:</span> <span>AWS (EC2, S3), GitHub, Linux</span></li><li class="d-flex"><span>Interest:</span> <span>Coding, Problem Solving, System Design, Building Scalable Applications</span></li>
 								</ul>
 							</div>
 						</div>

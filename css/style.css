@@ -9197,7 +9197,10 @@ textarea.form-control {
 .big-4 {
   font-size: 42px;
   margin: 0 auto;
-  transform: scaleX(1.2); /* Stretch the text by 1.2 times */ }
+  /*transform: scaleX(1.2); Stretch the text by 1.2 times  */
+  letter-spacing: 1px;
+  font-weight: 700; 
+}
 
 .heading-section {
   position: relative; }
