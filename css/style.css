@@ -9706,3 +9706,279 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+
+
+
+/* =====================================================
+   RESPONSIVE DESIGN FIX
+   Mobile, Tablet, Laptop and Desktop
+===================================================== */
+
+/* Global responsive fixes */
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Navbar container fixed width correction */
+.ftco-navbar-light .container {
+    width: 100% !important;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Prevent long text from overflowing */
+.about-info,
+.about-info li,
+.resume-wrap,
+.blog-entry,
+.contact-info,
+.heading-section {
+    min-width: 0;
+    overflow-wrap: break-word;
+}
+
+/* Project cards */
+#project-section .blog-entry {
+    width: 100%;
+    height: 100%;
+}
+
+#project-section .block-20 {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+/* Resources and certification cards */
+#resources-section .resume-wrap,
+#certification-section .resume-wrap,
+#coding-section .resume-wrap {
+    width: 100%;
+    height: 100%;
+}
+
+/* Contact cards */
+#contact-section .contact-info .box {
+    width: 100%;
+    height: 100%;
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    .ftco-navbar-light .container {
+        max-width: 960px;
+    }
+
+    /* Project cards: two columns */
+    #project-section .col-md-4 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    /* Resource cards: two columns */
+    #resources-section .col-md-4,
+    #certification-section .col-md-4 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    /* Coding cards: two columns */
+    #coding-section .col-md-3 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .hero .img {
+        background-size: contain !important;
+        background-position: center bottom !important;
+    }
+}
+
+/* Mobile and small tablet */
+@media (max-width: 767.98px) {
+
+    /* Navbar */
+    .ftco-navbar-light .container {
+        width: 100% !important;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .navbar-brand {
+        font-size: 21px;
+    }
+
+    /* Hero section */
+    .hero .img {
+        background-size: contain !important;
+        background-position: center bottom !important;
+        min-height: 320px;
+        margin-top: 20px;
+    }
+
+    .home-slider .text {
+        width: 100%;
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .home-slider h1 {
+        font-size: 32px !important;
+        line-height: 1.3;
+        overflow-wrap: break-word;
+    }
+
+    .home-slider h2 {
+        font-size: 22px;
+    }
+
+    #typing-animation {
+        font-size: 20px !important;
+        white-space: normal;
+        overflow-wrap: anywhere;
+    }
+
+    /* Buttons */
+    .btn,
+    .home-slider .btn {
+        width: auto !important;
+        max-width: 100%;
+        display: inline-block;
+        margin: 5px;
+    }
+
+    /* About section */
+    .about-mf .box-shadow-full {
+        padding: 2rem 1rem;
+    }
+
+    .about-img {
+        text-align: center;
+    }
+
+    .about-img img {
+        width: 140px;
+        height: 140px;
+        margin: 0 auto;
+    }
+
+    .about-info {
+        font-size: 14px;
+        overflow-wrap: anywhere;
+    }
+
+    .about-info p {
+        margin-bottom: 10px;
+    }
+
+    .about-info li {
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    /* Section headings */
+    .heading-section h2 {
+        font-size: 28px;
+    }
+
+    .big,
+    .big-2 {
+        display: none;
+    }
+
+    /* Cards */
+    .resume-wrap {
+        margin-bottom: 20px;
+    }
+
+    #project-section .col-md-4,
+    #resources-section .col-md-4,
+    #certification-section .col-md-4,
+    #coding-section .col-md-3 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    /* Project title */
+    #project-section .heading {
+        font-size: 20px;
+        overflow-wrap: anywhere;
+    }
+
+    /* Contact section */
+    #contact-section .contact-info > div {
+        margin-bottom: 15px;
+    }
+
+    /* Social icons */
+    .ftco-footer-social {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    /* Footer */
+    .ftco-footer p {
+        font-size: 13px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+/* Small mobile devices */
+@media (max-width: 375px) {
+
+    .navbar-brand {
+        font-size: 19px;
+    }
+
+    .home-slider h1 {
+        font-size: 27px !important;
+    }
+
+    .home-slider h2 {
+        font-size: 19px;
+    }
+
+    #typing-animation {
+        font-size: 17px !important;
+    }
+
+    .hero .img {
+        min-height: 270px;
+    }
+
+    .heading-section h2 {
+        font-size: 25px;
+    }
+
+    .btn {
+        padding: 10px 18px !important;
+        font-size: 14px;
+    }
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+
+    .ftco-navbar-light .container {
+        max-width: 1140px;
+    }
+}
